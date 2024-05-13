@@ -1,0 +1,10 @@
+spec:
+  containers:
+    - name: streamlit
+      image: sfseapac-au-demo93.registry.snowflakecomputing.com/geospatial/qfes_test/spcs_image_repository/st_spcs
+      env:
+        SNOWFLAKE_WAREHOUSE: APP_WH
+  endpoints:
+    - name: streamlit
+      port: 8501
+      public: true
